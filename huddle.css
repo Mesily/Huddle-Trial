@@ -1,0 +1,99 @@
+body {
+    background-color: gray;
+    background-image: url(/images/bg-desktop.svg);
+}
+/* .container {
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 40px, auto, 40px;
+    grid-gap: 20px;
+} */
+.main {
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 40px, auto, 40px;
+    grid-gap: 20px;
+
+}
+.mainimage {
+    display: grid
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2 / 3;
+}
+.text {
+    /* display: flex;
+    flex-direction: column; */
+    /* display: grid; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+   grid-row-start: 2;
+   font-size: 1.7rem;
+   margin-top: 10px;
+   margin-left: 40px;
+   margin-right: 80px;
+   
+
+}
+.texthead {
+
+}
+.textpara {
+    
+}
+.textlink {
+    
+   background-color: white;
+   color: pink;
+   padding: 1rem 2rem;
+   border-radius:2rem;
+    
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.fa-brands {
+margin: 20px;
+border: 1px solid white;
+border-radius: 50%;
+height: 2.5rem;
+width: 2.5rem;
+text-align:center;
+font-size: 1.1rem;
+line-height: 2.5rem;
+
+
+}
+.fa-instagram {
+margin-right: 80px;
+}
+
+@media screen and (max-width: 400px) {
+    .main {
+        display:grid;
+       
+        /* grid-template-columns: 1fr */
+        grid-template-rows: 40px auto auto 40px;
+       
+        align-items: center;
+    
+    }
+    .mainimage {
+        display: grid
+       grid-row: 2 / 3;
+}
+    .text {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    
+}
+}
